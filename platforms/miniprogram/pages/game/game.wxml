@@ -1,0 +1,10 @@
+<canvas
+  id="game-canvas"
+  type="2d"
+  class="game-canvas"
+  bindtouchstart="onTouchStart"
+  catchtouchmove="onTouchMove"
+  bindtouchend="onTouchEnd"
+  bindtouchcancel="onTouchCancel"
+></canvas>
+<view wx:if="{{error}}" class="error-message">{{error}}</view>

@@ -1,0 +1,51 @@
+{
+  "generator": "native image_gen.imagegen",
+  "mode": "generate",
+  "transparent_background": true,
+  "prompt": "Use case: stylized-concept. Asset type: a single production mobile block-puzzle game objective icon for clearing completed ROWS AND COLUMNS, shown beside a numeric counter at 24 logical pixels. Create one isolated icon centered on a genuinely transparent RGBA background. Subject: exactly a compact 3-by-3 arrangement of nine small rounded square tiles viewed straight-on, with clear transparent narrow gutters. The middle horizontal row and middle vertical column form a bright ivory / icy-white crossing clear effect; the four corner mini-tiles are rich ice blue. A very small restrained four-point glint near the upper-right corner suggests the line has just cleared. It must read as multiple rows AND columns, not as a single colored block, plus-button, rotate arrow, exchange arrow, or treasure. Art style: premium casual-game UI, thick simple forms, softly rounded bevels, polished satin ice-blue material with a tiny upper-left highlight, slight dimensionality and deep blue edge shading. Match a dark royal-blue puzzle game's soft glossy ice-blue arrow icon family. Keep detail very simple and bold so it remains crisp and understandable at 24 px. Square composition, icon uses about 84 percent of canvas, complete silhouette fully inside frame. No text, no letters, no numbers, no caption, no labels, no border, no circular button, no surrounding panel, no backdrop, no ground, no shadows outside the isolated icon, no fake transparency checkerboard. This is a new standalone transparent sprite, not an edit of any other artwork.",
+  "master_path": "assets/source/goal-lines/icon_goal_lines-master.png",
+  "master_size": [
+    1254,
+    1254
+  ],
+  "master_sha256": "fb6e03e9966c799ae2f7356ecb68b5ae12ac7c8d97fca068d9c3049931f516ac",
+  "production_processing": {
+    "operations": [
+      "crop around central icon; omit detached top-left fragment",
+      "Lanczos downscale",
+      "center on transparent RGBA canvas"
+    ],
+    "alpha_crop_measure_threshold": 8,
+    "source_crop_xyxy": [
+      138,
+      123,
+      1150,
+      1139
+    ],
+    "subject_resized": [
+      120,
+      120
+    ],
+    "paste_xy": [
+      4,
+      4
+    ]
+  },
+  "output_path": "assets/source/goal-lines/icon_goal_lines.png",
+  "output_size": [
+    128,
+    128
+  ],
+  "output_mode": "RGBA",
+  "output_sha256": "d5f39367fd2845fb548cbe687d6f93f18aea91801edc1253e4bd505823d0bd13",
+  "output_alpha_extrema": [
+    0,
+    255
+  ],
+  "output_alpha_bbox": [
+    4,
+    4,
+    124,
+    124
+  ]
+}

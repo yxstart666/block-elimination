@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#1c275b">
+  <title>方块木语 · 无限挑战与闯关模式</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}
+    body{display:grid;place-items:center;background:#0b1231;background-image:radial-gradient(ellipse at 20% 10%,#343b7666 0,transparent 55%),radial-gradient(ellipse at 85% 85%,#40316e66 0,transparent 60%);font-family:system-ui,sans-serif;overscroll-behavior:none}
+    main{height:100%;width:min(100%,460px);min-height:0;min-width:0;position:relative;background:#1c275b;box-shadow:0 0 65px #02061e99}
+    canvas{display:block;width:100%;height:100%;min-height:0;min-width:0;touch-action:none;outline:none;-webkit-tap-highlight-color:transparent;user-select:none}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(min-width:700px) and (min-height:800px){main{height:calc(100% - 48px);max-height:920px;border-radius:24px;overflow:hidden;border:1px solid #5368ae}}
+  </style>
+</head>
+<body>
+  <main aria-label="方块木语，无限挑战与闯关模式">
+    <h1 class="sr-only">方块木语 · 无限挑战与闯关模式</h1>
+    <p id="instructions" class="sr-only">首次进入提供三选一教学：选出能填满缺口的一块，一次消除两行，空闲4秒后出现手势。再次进入和重新挑战均从空棋盘开始。正常三块一组，填满整行或整列消除，无重力下落；所有剩余方块都无处放置才结束。灰色候选暂不可放，消除腾出空间后恢复。底部五道具依次为提示、旋转、换块、炸弹和推土机；数量大于0才显示库存，用完后可以在获取弹窗选择广告领取或金币购买。领取仅加库存，需再次点击使用。旋转试转不扣库存，放入改变方向的方块后才扣。左上设置可重新开始、打开地图和排行榜。数字1到3选择候选，方向键移动，Enter放置，T试转、X换块、L地图、Escape取消；失败时V请求广告复活。分数在结算中查看。</p>
+    <canvas id="game" tabindex="0" role="application" aria-label="木块消除棋盘" aria-describedby="instructions campaign-instructions"></canvas>
+    <p id="campaign-instructions" class="sr-only">闯关模式共30关，消线、星星、颜色与组合目标交替，完成前关解锁下一关。测试入口可全部选关，但真实通关才结算。每关开局宽松、前段持续消除，随目标进度增加规划要求。全部30关没有时间限制或隐藏落子次数限制，任务栏仅显示横向均匀对齐的目标。组合目标共13关，可叠加消线、颜色与星星。红黄绿蓝紫为五种独立颜色；消线时实际被清的指定色块计入目标。棋盘和新候选均可带同色凹刻星星，随所在行列消除收集；所有目标达成才通关。星星收集与通关评级是不同系统。结算按实际落子、消线和连击得分给一至三星，基础金币累计10、15、40，同关首次或升星仅补差额；首次三星宝箱随机普通道具1个，广告可将本次新增金币翻倍一次。库存跨局保存，主局不显示金币余额，购买与结算弹窗仍展示有关金额。失败弹窗提供复活和有效救场。地图支持左右翻页、数字选关和Enter继续；排行榜未配置时如实显示未连接与本机最佳，不伪造真人排名。返回无尽保留本次进入闯关前的盘面。</p>
+    <output id="status" class="sr-only" aria-live="polite"></output>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

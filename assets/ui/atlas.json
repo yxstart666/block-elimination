@@ -1,0 +1,1391 @@
+{
+  "version": 1,
+  "logicalScreen": [
+    390,
+    844
+  ],
+  "format": "RGBA PNG atlas + opaque background PNG",
+  "mastersManifest": "../asset-manifest.json",
+  "notes": [
+    "可选运行时轻量版本。高分辨率生产原图/独立PNG完整保留且未修改。",
+    "未使用有损调色板或颜色量化；仅LANCZOS缩小和PNG无损压缩。",
+    "frame包含透明空隙；使用Canvas drawImage裁剪frame并按建议逻辑尺寸绘制。",
+    "tile统一128×128，图集中每帧外侧2像素透明gutter；请关闭不合适的边缘采样扩展。",
+    "UI九宫格insets已按本atlas帧缩放，顺序left,top,right,bottom。",
+    "非整数的逻辑尺寸应根据实际屏幕布局和DPR计算，不应把390×844当作唯一设备像素尺寸。",
+    "v2: only icon_rotate and icon_refresh artwork changed to thick arrows with no block decoration; their frame coordinates/sizes are unchanged. Previous files are archived in05_图标修订_v2/旧版回退.",
+    "v3: only icon_rotate is replaced with two clockwise curved arrows. Frame unchanged; previous v2 files archived in06_旋转双箭头_v3/旧版回退. Motion specification is not executable game code.",
+    "v4: append dedicated goal_lines sprite below the original icon atlas. All previous 42 frame coordinates and pixels preserved."
+  ],
+  "atlases": {
+    "tiles": {
+      "file": "tiles.png",
+      "size": [
+        660,
+        264
+      ],
+      "sprites": 10,
+      "bytes": 187104,
+      "sha256": "824ab97a52cf76fc316c9d288d271832eb819776ed2f7b5a3db8db688db559e9",
+      "cell": [
+        132,
+        132
+      ],
+      "paddingMinimum": 2,
+      "losslessEncoder": "OpenCV lossless PNG strategy1, compression9"
+    },
+    "icons": {
+      "file": "icons.png",
+      "size": [
+        720,
+        720
+      ],
+      "sprites": 21,
+      "bytes": 374315,
+      "sha256": "3887762f5ba0e722ce33204a6460e7098a6634e24baf4c6fdd86404071b6c526",
+      "cell": [
+        144,
+        144
+      ],
+      "paddingMinimum": 8,
+      "losslessEncoder": "Pillow optimize PNG; existing 720x576 pixels preserved, dedicated goal_lines appended."
+    },
+    "ui": {
+      "file": "ui.png",
+      "size": [
+        1088,
+        816
+      ],
+      "sprites": 12,
+      "bytes": 532679,
+      "sha256": "0a5314a7d7824ee5ff71c4a48fbe71ebcc54500863f5c573330cf983d33561a8",
+      "cell": [
+        272,
+        272
+      ],
+      "paddingMinimum": 8,
+      "losslessEncoder": "OpenCV lossless PNG strategy1, compression9"
+    }
+  },
+  "frames": {
+    "tile_red": {
+      "atlas": "tiles.png",
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 128,
+        "h": 128
+      },
+      "master": "02_切图/方块/tile_red.png",
+      "masterSize": [
+        336,
+        336
+      ],
+      "scale": [
+        0.38095238095238093,
+        0.38095238095238093
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        43,
+        43
+      ],
+      "variant": "normal",
+      "color": "red",
+      "contentBounds": [
+        5,
+        5,
+        122,
+        123
+      ]
+    },
+    "tile_yellow": {
+      "atlas": "tiles.png",
+      "frame": {
+        "x": 134,
+        "y": 2,
+        "w": 128,
+        "h": 128
+      },
+      "master": "02_切图/方块/tile_yellow.png",
+      "masterSize": [
+        336,
+        336
+      ],
+      "scale": [
+        0.38095238095238093,
+        0.38095238095238093
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        43,
+        43
+      ],
+      "variant": "normal",
+      "color": "yellow",
+      "contentBounds": [
+        6,
+        5,
+        123,
+        123
+      ]
+    },
+    "tile_green": {
+      "atlas": "tiles.png",
+      "frame": {
+        "x": 266,
+        "y": 2,
+        "w": 128,
+        "h": 128
+      },
+      "master": "02_切图/方块/tile_green.png",
+      "masterSize": [
+        336,
+        336
+      ],
+      "scale": [
+        0.38095238095238093,
+        0.38095238095238093
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        43,
+        43
+      ],
+      "variant": "normal",
+      "color": "green",
+      "contentBounds": [
+        6,
+        5,
+        122,
+        123
+      ]
+    },
+    "tile_blue": {
+      "atlas": "tiles.png",
+      "frame": {
+        "x": 398,
+        "y": 2,
+        "w": 128,
+        "h": 128
+      },
+      "master": "02_切图/方块/tile_blue.png",
+      "masterSize": [
+        336,
+        336
+      ],
+      "scale": [
+        0.38095238095238093,
+        0.38095238095238093
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        43,
+        43
+      ],
+      "variant": "normal",
+      "color": "blue",
+      "contentBounds": [
+        6,
+        5,
+        122,
+        123
+      ]
+    },
+    "tile_purple": {
+      "atlas": "tiles.png",
+      "frame": {
+        "x": 530,
+        "y": 2,
+        "w": 128,
+        "h": 128
+      },
+      "master": "02_切图/方块/tile_purple.png",
+      "masterSize": [
+        336,
+        336
+      ],
+      "scale": [
+        0.38095238095238093,
+        0.38095238095238093
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        43,
+        43
+      ],
+      "variant": "normal",
+      "color": "purple",
+      "contentBounds": [
+        5,
+        5,
+        122,
+        123
+      ]
+    },
+    "tile_red_star": {
+      "atlas": "tiles.png",
+      "frame": {
+        "x": 2,
+        "y": 134,
+        "w": 128,
+        "h": 128
+      },
+      "master": "02_切图/方块/tile_red_star.png",
+      "masterSize": [
+        336,
+        336
+      ],
+      "scale": [
+        0.38095238095238093,
+        0.38095238095238093
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        43,
+        43
+      ],
+      "variant": "star",
+      "color": "red",
+      "contentBounds": [
+        5,
+        4,
+        123,
+        123
+      ]
+    },
+    "tile_yellow_star": {
+      "atlas": "tiles.png",
+      "frame": {
+        "x": 134,
+        "y": 134,
+        "w": 128,
+        "h": 128
+      },
+      "master": "02_切图/方块/tile_yellow_star.png",
+      "masterSize": [
+        336,
+        336
+      ],
+      "scale": [
+        0.38095238095238093,
+        0.38095238095238093
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        43,
+        43
+      ],
+      "variant": "star",
+      "color": "yellow",
+      "contentBounds": [
+        5,
+        4,
+        123,
+        123
+      ]
+    },
+    "tile_green_star": {
+      "atlas": "tiles.png",
+      "frame": {
+        "x": 266,
+        "y": 134,
+        "w": 128,
+        "h": 128
+      },
+      "master": "02_切图/方块/tile_green_star.png",
+      "masterSize": [
+        336,
+        336
+      ],
+      "scale": [
+        0.38095238095238093,
+        0.38095238095238093
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        43,
+        43
+      ],
+      "variant": "star",
+      "color": "green",
+      "contentBounds": [
+        5,
+        4,
+        122,
+        123
+      ]
+    },
+    "tile_blue_star": {
+      "atlas": "tiles.png",
+      "frame": {
+        "x": 398,
+        "y": 134,
+        "w": 128,
+        "h": 128
+      },
+      "master": "02_切图/方块/tile_blue_star.png",
+      "masterSize": [
+        336,
+        336
+      ],
+      "scale": [
+        0.38095238095238093,
+        0.38095238095238093
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        43,
+        43
+      ],
+      "variant": "star",
+      "color": "blue",
+      "contentBounds": [
+        5,
+        4,
+        123,
+        123
+      ]
+    },
+    "tile_purple_star": {
+      "atlas": "tiles.png",
+      "frame": {
+        "x": 530,
+        "y": 134,
+        "w": 128,
+        "h": 128
+      },
+      "master": "02_切图/方块/tile_purple_star.png",
+      "masterSize": [
+        336,
+        336
+      ],
+      "scale": [
+        0.38095238095238093,
+        0.38095238095238093
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        43,
+        43
+      ],
+      "variant": "star",
+      "color": "purple",
+      "contentBounds": [
+        5,
+        4,
+        123,
+        124
+      ]
+    },
+    "icon_hint": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 11,
+        "y": 8,
+        "w": 122,
+        "h": 128
+      },
+      "master": "02_切图/图标/icon_hint.png",
+      "masterSize": [
+        257,
+        270
+      ],
+      "scale": [
+        0.47470817120622566,
+        0.4740740740740741
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 28,
+      "contentBounds": [
+        3,
+        4,
+        119,
+        125
+      ]
+    },
+    "icon_rotate": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 158,
+        "y": 8,
+        "w": 116,
+        "h": 128
+      },
+      "master": "02_切图/图标/icon_rotate.png",
+      "masterSize": [
+        227,
+        250
+      ],
+      "scale": [
+        0.5110132158590308,
+        0.512
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 28,
+      "contentBounds": [
+        2,
+        6,
+        114,
+        121
+      ],
+      "revision": "v3-two-curved-arrows",
+      "rotationPivot": {
+        "x": 58.0,
+        "y": 64.0
+      },
+      "motionSpec": {
+        "trigger": "candidate markers only while rotation mode is active",
+        "clockwiseDegrees": 360,
+        "durationMs": 1200,
+        "loopWhileRotationMode": true,
+        "candidateAlpha": 0.5,
+        "bottomButtonRotates": false,
+        "status": "implemented in src/ui/game.ts"
+      }
+    },
+    "icon_refresh": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 296,
+        "y": 13,
+        "w": 128,
+        "h": 117
+      },
+      "master": "02_切图/图标/icon_refresh.png",
+      "masterSize": [
+        240,
+        220
+      ],
+      "scale": [
+        0.5333333333333333,
+        0.5318181818181819
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 28,
+      "contentBounds": [
+        12,
+        2,
+        116,
+        115
+      ],
+      "revision": "v2-thick-arrows-no-blocks"
+    },
+    "icon_bomb": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 448,
+        "y": 8,
+        "w": 111,
+        "h": 128
+      },
+      "master": "02_切图/图标/icon_bomb.png",
+      "masterSize": [
+        223,
+        257
+      ],
+      "scale": [
+        0.4977578475336323,
+        0.4980544747081712
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 28,
+      "contentBounds": [
+        4,
+        3,
+        107,
+        124
+      ]
+    },
+    "icon_bulldozer": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 584,
+        "y": 24,
+        "w": 128,
+        "h": 95
+      },
+      "master": "02_切图/图标/icon_bulldozer.png",
+      "masterSize": [
+        266,
+        198
+      ],
+      "scale": [
+        0.48120300751879697,
+        0.4797979797979798
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 28,
+      "contentBounds": [
+        4,
+        3,
+        125,
+        92
+      ]
+    },
+    "icon_settings": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 8,
+        "y": 152,
+        "w": 128,
+        "h": 127
+      },
+      "master": "02_切图/图标/icon_settings.png",
+      "masterSize": [
+        244,
+        242
+      ],
+      "scale": [
+        0.5245901639344263,
+        0.5247933884297521
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 28,
+      "contentBounds": [
+        4,
+        4,
+        124,
+        123
+      ]
+    },
+    "icon_back": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 152,
+        "y": 166,
+        "w": 128,
+        "h": 99
+      },
+      "master": "02_切图/图标/icon_back.png",
+      "masterSize": [
+        246,
+        190
+      ],
+      "scale": [
+        0.5203252032520326,
+        0.5210526315789473
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 20,
+      "contentBounds": [
+        4,
+        4,
+        124,
+        95
+      ]
+    },
+    "icon_close": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 296,
+        "y": 152,
+        "w": 128,
+        "h": 127
+      },
+      "master": "02_切图/图标/icon_close.png",
+      "masterSize": [
+        206,
+        204
+      ],
+      "scale": [
+        0.6213592233009708,
+        0.6225490196078431
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 20,
+      "contentBounds": [
+        5,
+        4,
+        123,
+        123
+      ]
+    },
+    "icon_video": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 440,
+        "y": 165,
+        "w": 128,
+        "h": 101
+      },
+      "master": "02_切图/图标/icon_video.png",
+      "masterSize": [
+        257,
+        203
+      ],
+      "scale": [
+        0.4980544747081712,
+        0.4975369458128079
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 28,
+      "contentBounds": [
+        3,
+        3,
+        124,
+        98
+      ]
+    },
+    "icon_coin": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 584,
+        "y": 158,
+        "w": 128,
+        "h": 116
+      },
+      "master": "02_切图/图标/icon_coin.png",
+      "masterSize": [
+        267,
+        242
+      ],
+      "scale": [
+        0.4794007490636704,
+        0.4793388429752066
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 28,
+      "contentBounds": [
+        3,
+        4,
+        125,
+        113
+      ]
+    },
+    "icon_check": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 8,
+        "y": 305,
+        "w": 128,
+        "h": 109
+      },
+      "master": "02_切图/图标/icon_check.png",
+      "masterSize": [
+        240,
+        204
+      ],
+      "scale": [
+        0.5333333333333333,
+        0.5343137254901961
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 28,
+      "contentBounds": [
+        4,
+        4,
+        124,
+        105
+      ]
+    },
+    "icon_lock": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 162,
+        "y": 296,
+        "w": 108,
+        "h": 128
+      },
+      "master": "02_切图/图标/icon_lock.png",
+      "masterSize": [
+        218,
+        258
+      ],
+      "scale": [
+        0.4954128440366973,
+        0.49612403100775193
+      ],
+      "transparent": true,
+      "suggestedLogicalHeight": 28,
+      "contentBounds": [
+        3,
+        3,
+        104,
+        125
+      ]
+    },
+    "goal_star_outline": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 296,
+        "y": 298,
+        "w": 128,
+        "h": 123
+      },
+      "master": "02_切图/图标/goal_star_outline.png",
+      "masterSize": [
+        289,
+        278
+      ],
+      "scale": [
+        0.4429065743944637,
+        0.44244604316546765
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        26,
+        26
+      ],
+      "semantic": "收集目标图标，透明空心。区别于凹刻星星块和结算评级星。",
+      "contentBounds": [
+        4,
+        3,
+        124,
+        119
+      ]
+    },
+    "rating_star_gold": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 440,
+        "y": 300,
+        "w": 128,
+        "h": 120
+      },
+      "master": "02_切图/图标/rating_star_gold.png",
+      "masterSize": [
+        287,
+        270
+      ],
+      "scale": [
+        0.445993031358885,
+        0.4444444444444444
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        32,
+        32
+      ],
+      "semantic": "仅地图/结算评级使用；不得重新放回主游戏页进度条。",
+      "contentBounds": [
+        4,
+        3,
+        125,
+        116
+      ]
+    },
+    "rating_star_dim": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 584,
+        "y": 300,
+        "w": 128,
+        "h": 120
+      },
+      "master": "02_切图/图标/rating_star_dim.png",
+      "masterSize": [
+        288,
+        270
+      ],
+      "scale": [
+        0.4444444444444444,
+        0.4444444444444444
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        32,
+        32
+      ],
+      "semantic": "仅地图/结算评级使用；不得重新放回主游戏页进度条。",
+      "contentBounds": [
+        4,
+        3,
+        124,
+        116
+      ]
+    },
+    "trophy": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 8,
+        "y": 448,
+        "w": 128,
+        "h": 112
+      },
+      "master": "02_切图/图标/trophy.png",
+      "masterSize": [
+        328,
+        286
+      ],
+      "scale": [
+        0.3902439024390244,
+        0.3916083916083916
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        44,
+        44
+      ],
+      "contentBounds": [
+        3,
+        2,
+        125,
+        109
+      ]
+    },
+    "treasure_chest_closed": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 152,
+        "y": 448,
+        "w": 128,
+        "h": 112
+      },
+      "master": "02_切图/图标/treasure_chest_closed.png",
+      "masterSize": [
+        315,
+        275
+      ],
+      "scale": [
+        0.40634920634920635,
+        0.4072727272727273
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        64,
+        58
+      ],
+      "contentBounds": [
+        3,
+        3,
+        125,
+        109
+      ]
+    },
+    "revive_heart": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 296,
+        "y": 448,
+        "w": 128,
+        "h": 111
+      },
+      "master": "02_切图/图标/revive_heart.png",
+      "masterSize": [
+        317,
+        274
+      ],
+      "scale": [
+        0.4037854889589905,
+        0.4051094890510949
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        40,
+        38
+      ],
+      "contentBounds": [
+        3,
+        3,
+        125,
+        108
+      ]
+    },
+    "fx_line_clear": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 440,
+        "y": 487,
+        "w": 128,
+        "h": 33
+      },
+      "master": "02_切图/特效/fx_line_clear.png",
+      "masterSize": [
+        332,
+        86
+      ],
+      "scale": [
+        0.3855421686746988,
+        0.38372093023255816
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        250,
+        36
+      ],
+      "semantic": "局部消除扫光纹理，短时动画用，结束后停止渲染。",
+      "contentBounds": [
+        0,
+        0,
+        128,
+        33
+      ]
+    },
+    "tutorial_hand": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 598,
+        "y": 440,
+        "w": 100,
+        "h": 128
+      },
+      "master": "02_切图/图标/tutorial_hand.png",
+      "masterSize": [
+        243,
+        311
+      ],
+      "scale": [
+        0.411522633744856,
+        0.4115755627009646
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        36,
+        44
+      ],
+      "contentBounds": [
+        3,
+        3,
+        97,
+        125
+      ]
+    },
+    "ui_button_primary": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 8,
+        "y": 84,
+        "w": 256,
+        "h": 103
+      },
+      "master": "02_切图/组件/ui_button_primary.png",
+      "masterSize": [
+        339,
+        136
+      ],
+      "scale": [
+        0.7551622418879056,
+        0.7573529411764706
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        286,
+        48
+      ],
+      "nineSliceInsets": [
+        33,
+        29,
+        33,
+        29
+      ],
+      "contentBounds": [
+        3,
+        5,
+        254,
+        103
+      ]
+    },
+    "ui_button_secondary": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 280,
+        "y": 84,
+        "w": 256,
+        "h": 104
+      },
+      "master": "02_切图/组件/ui_button_secondary.png",
+      "masterSize": [
+        336,
+        137
+      ],
+      "scale": [
+        0.7619047619047619,
+        0.7591240875912408
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        286,
+        48
+      ],
+      "nineSliceInsets": [
+        34,
+        29,
+        34,
+        29
+      ],
+      "contentBounds": [
+        2,
+        5,
+        254,
+        104
+      ]
+    },
+    "ui_button_gold": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 552,
+        "y": 84,
+        "w": 256,
+        "h": 104
+      },
+      "master": "02_切图/组件/ui_button_gold.png",
+      "masterSize": [
+        334,
+        136
+      ],
+      "scale": [
+        0.7664670658682635,
+        0.7647058823529411
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        286,
+        48
+      ],
+      "nineSliceInsets": [
+        34,
+        29,
+        34,
+        29
+      ],
+      "contentBounds": [
+        2,
+        5,
+        254,
+        104
+      ]
+    },
+    "ui_button_disabled": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 824,
+        "y": 83,
+        "w": 256,
+        "h": 106
+      },
+      "master": "02_切图/组件/ui_button_disabled.png",
+      "masterSize": [
+        336,
+        139
+      ],
+      "scale": [
+        0.7619047619047619,
+        0.762589928057554
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        286,
+        48
+      ],
+      "nineSliceInsets": [
+        34,
+        29,
+        34,
+        29
+      ],
+      "contentBounds": [
+        2,
+        6,
+        254,
+        106
+      ]
+    },
+    "ui_modal_panel": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 16,
+        "y": 280,
+        "w": 240,
+        "h": 256
+      },
+      "master": "02_切图/组件/ui_modal_panel.png",
+      "masterSize": [
+        340,
+        362
+      ],
+      "scale": [
+        0.7058823529411765,
+        0.7071823204419889
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        334,
+        354
+      ],
+      "nineSliceInsets": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "contentBounds": [
+        3,
+        6,
+        238,
+        256
+      ]
+    },
+    "ui_task_strip": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 280,
+        "y": 361,
+        "w": 256,
+        "h": 93
+      },
+      "master": "02_切图/组件/ui_task_strip.png",
+      "masterSize": [
+        343,
+        124
+      ],
+      "scale": [
+        0.7463556851311953,
+        0.75
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        362,
+        54
+      ],
+      "nineSliceInsets": [
+        27,
+        22,
+        27,
+        22
+      ],
+      "contentBounds": [
+        5,
+        6,
+        255,
+        92
+      ]
+    },
+    "ui_icon_button": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 566,
+        "y": 290,
+        "w": 228,
+        "h": 236
+      },
+      "master": "02_切图/组件/ui_icon_button.png",
+      "masterSize": [
+        228,
+        236
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        50,
+        48
+      ],
+      "nineSliceInsets": [
+        38,
+        38,
+        38,
+        38
+      ],
+      "contentBounds": [
+        1,
+        7,
+        225,
+        234
+      ]
+    },
+    "ui_badge_pill": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 824,
+        "y": 359,
+        "w": 256,
+        "h": 97
+      },
+      "master": "02_切图/组件/ui_badge_pill.png",
+      "masterSize": [
+        339,
+        128
+      ],
+      "scale": [
+        0.7551622418879056,
+        0.7578125
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        80,
+        28
+      ],
+      "contentBounds": [
+        4,
+        6,
+        251,
+        96
+      ]
+    },
+    "ui_toggle_on": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 8,
+        "y": 617,
+        "w": 256,
+        "h": 125
+      },
+      "master": "02_切图/组件/ui_toggle_on.png",
+      "masterSize": [
+        300,
+        146
+      ],
+      "scale": [
+        0.8533333333333334,
+        0.8561643835616438
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        40,
+        22
+      ],
+      "contentBounds": [
+        5,
+        6,
+        253,
+        123
+      ]
+    },
+    "ui_toggle_off": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 280,
+        "y": 620,
+        "w": 256,
+        "h": 120
+      },
+      "master": "02_切图/组件/ui_toggle_off.png",
+      "masterSize": [
+        306,
+        144
+      ],
+      "scale": [
+        0.8366013071895425,
+        0.8333333333333334
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        40,
+        22
+      ],
+      "contentBounds": [
+        5,
+        6,
+        251,
+        119
+      ]
+    },
+    "ui_count_badge": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 579,
+        "y": 574,
+        "w": 202,
+        "h": 212
+      },
+      "master": "02_切图/组件/ui_count_badge.png",
+      "masterSize": [
+        202,
+        212
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        20,
+        20
+      ],
+      "contentBounds": [
+        3,
+        7,
+        199,
+        212
+      ]
+    },
+    "ui_empty_cell": {
+      "atlas": "ui.png",
+      "frame": {
+        "x": 837,
+        "y": 567,
+        "w": 229,
+        "h": 226
+      },
+      "master": "02_切图/组件/ui_empty_cell.png",
+      "masterSize": [
+        229,
+        226
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        43,
+        43
+      ],
+      "contentBounds": [
+        6,
+        7,
+        224,
+        219
+      ]
+    },
+    "goal_lines": {
+      "atlas": "icons.png",
+      "frame": {
+        "x": 8,
+        "y": 584,
+        "w": 128,
+        "h": 128
+      },
+      "master": "../source/goal-lines/icon_goal_lines-master.png",
+      "masterSize": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "suggestedLogicalSize": [
+        24,
+        24
+      ],
+      "semantic": "Clear completed rows and columns; ivory cross on icy-blue 3x3 mini-grid",
+      "provenance": "../source/goal-lines/icon_goal_lines-source.json"
+    }
+  },
+  "background": {
+    "file": "background.png",
+    "size": [
+      390,
+      844
+    ],
+    "master": "02_切图/backgrounds/bg_game.png",
+    "bytes": 219263,
+    "sha256": "eac4453d2449d19fc9a45f7f2e4c2667d08d6230b5c80f21e009abe5d66d17b7",
+    "fit": "cover，随屏幕重算安全区与内容布局",
+    "losslessEncoder": "OpenCV lossless PNG strategy3, compression9"
+  },
+  "totals": {
+    "sprites": 43,
+    "atlasImages": 3,
+    "backgrounds": 1,
+    "runtimeImageBytes": 1313361,
+    "masterImagesUnchanged": false,
+    "usesColorQuantization": false,
+    "losslessOptimizationCompared": true
+  },
+  "qa": {
+    "openedRuntimePreview": true,
+    "frameCount": 43,
+    "allFramesInBounds": true,
+    "allMastersSha256Unchanged": false,
+    "hollowGoalCenterTransparent": true,
+    "losslessOptimizedPixelsIdentical": true,
+    "allUntargetedMastersSha256Unchanged": true,
+    "unchangedNonTargetRuntimeFrames": 42,
+    "existingFrameCoordinatesPreserved": true,
+    "twoArrowIconsContainNoBlocks": true,
+    "goalLinesReadableAt24": true
+  },
+  "revision": "v4-dedicated-row-column-goal"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "wood-block-puzzle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "8×8 纯 Canvas 2D 方块消除游戏，含无尽挑战与30关闯关模式",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "pretest": "npm run build",
+    "test": "node --test tests/*.test.ts",
+    "test:ui": "node scripts/smoke.mjs",
+    "test:powerups": "node scripts/powerup-smoke.mjs",
+    "test:tutorial": "node scripts/tutorial-smoke.mjs",
+    "test:visual": "node scripts/visual-smoke.mjs",
+    "test:levels": "node scripts/levels-smoke.mjs",
+    "test:pacing": "node scripts/pacing-bench.mjs",
+    "test:destructive": "node scripts/destructive-smoke.mjs",
+    "test:economy": "node scripts/economy-smoke.mjs",
+    "test:layout": "node scripts/layout-smoke.mjs",
+    "test:design-states": "node scripts/design-states-smoke.mjs",
+    "test:timer-vfx": "node scripts/timer-vfx-smoke.mjs",
+    "test:rotation-icon": "node scripts/rotation-icon-smoke.mjs",
+    "test:convenience": "node scripts/test-convenience-smoke.mjs"
+  },
+  "engines": { "node": ">=24" },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "playwright": "^1.65.1",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+release/
+.local/
+platforms/miniprogram/pages/game/game.js
+platforms/minigame/game.js
+project.private.config.json
+.env
+.env.*
+!.env.example
+*.zip

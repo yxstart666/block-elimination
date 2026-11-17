@@ -1,0 +1,4 @@
+{
+  "desc": "单页本地游戏",
+  "rules": [{ "action": "allow", "page": "*" }]
+}

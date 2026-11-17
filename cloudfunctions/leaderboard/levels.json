@@ -1,0 +1,272 @@
+{
+  "level-01": {
+    "maxMoves": 300,
+    "starScores": [
+      0,
+      280,
+      400
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-02": {
+    "maxMoves": 360,
+    "starScores": [
+      0,
+      450,
+      640
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-03": {
+    "maxMoves": 360,
+    "starScores": [
+      0,
+      460,
+      660
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-04": {
+    "maxMoves": 300,
+    "starScores": [
+      0,
+      290,
+      410
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-05": {
+    "maxMoves": 360,
+    "starScores": [
+      0,
+      410,
+      580
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-06": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      600,
+      850
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-07": {
+    "maxMoves": 300,
+    "starScores": [
+      0,
+      320,
+      450
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-08": {
+    "maxMoves": 360,
+    "starScores": [
+      0,
+      510,
+      730
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-09": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      550,
+      790
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-10": {
+    "maxMoves": 300,
+    "starScores": [
+      0,
+      310,
+      440
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-11": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      500,
+      720
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-12": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      550,
+      780
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-13": {
+    "maxMoves": 360,
+    "starScores": [
+      0,
+      410,
+      590
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-14": {
+    "maxMoves": 540,
+    "starScores": [
+      0,
+      670,
+      960
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-15": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      490,
+      700
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-16": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      480,
+      690
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-17": {
+    "maxMoves": 360,
+    "starScores": [
+      0,
+      430,
+      620
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-18": {
+    "maxMoves": 660,
+    "starScores": [
+      0,
+      720,
+      1030
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-19": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      460,
+      660
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-20": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      540,
+      770
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-21": {
+    "maxMoves": 360,
+    "starScores": [
+      0,
+      450,
+      650
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-22": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      530,
+      750
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-23": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      610,
+      870
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-24": {
+    "maxMoves": 360,
+    "starScores": [
+      0,
+      500,
+      710
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-25": {
+    "maxMoves": 540,
+    "starScores": [
+      0,
+      670,
+      960
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-26": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      440,
+      630
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-27": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      550,
+      790
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-28": {
+    "maxMoves": 360,
+    "starScores": [
+      0,
+      450,
+      640
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-29": {
+    "maxMoves": 660,
+    "starScores": [
+      0,
+      790,
+      1130
+    ],
+    "maxTimeBonus": 0
+  },
+  "level-30": {
+    "maxMoves": 420,
+    "starScores": [
+      0,
+      600,
+      850
+    ],
+    "maxTimeBonus": 0
+  }
+}
